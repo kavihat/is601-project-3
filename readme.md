@@ -1,12 +1,12 @@
 # Project Setup
 
 
-[![Production Workflow](https://github.com/kavihat/project-3/actions/workflows/prod.yml/badge.svg)](https://github.com/kavihat/project-3/actions/workflows/prod.yml)
+[![Production Workflow](https://github.com/kavihat/is601-project-3/actions/workflows/prod.yml/badge.svg)](https://github.com/kavihat/project-3/actions/workflows/prod.yml)
 
 * [Production Deployment](https://docker-project1-prod.herokuapp.com/)
 
 
-[![Development Workflow](https://github.com/kavihat/project-3/actions/workflows/dev.yml/badge.svg)](https://github.com/kavihat/project-3/actions/workflows/dev.yml)
+[![Development Workflow](https://github.com/kavihat/is601-project-3/actions/workflows/dev.yml/badge.svg)](https://github.com/kavihat/project-3/actions/workflows/dev.yml)
 * [Developmental Deployment](https://docker-project1-dev.herokuapp.com/)
 
 
