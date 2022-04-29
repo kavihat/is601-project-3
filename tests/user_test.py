@@ -19,10 +19,10 @@ def test_adding_user(application):
         #assert that we now have a new user
         #assert db.session.query(User).count() == 1
         #finding one user record by email
-        user = User.query.filter_by(email='keith@webizly.com').first()
+        user = User.query.filter_by(email='testuser@email.com').first()
         log.info(user)
         #asserting that the user retrieved is correct
-        assert user.email == 'keith@webizly.com'
+        assert user.email == 'testuser@email.com'
         #this is how you get a related record ready for insert
         user.songs= [Song("test","smap"),Song("test2","te")]
         #commit is what saves the songs
