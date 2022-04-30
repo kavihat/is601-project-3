@@ -16,19 +16,9 @@ def test_csv_file_exists(client):
     is_path_exist()
 
 
-
 def test_csv_processed(client):
     response = client.get('/songs/upload')
     assert response.status_code == 302
-    # f = FileField()
-    # f.data.filename = '/uploads/music.csv'
-    # response = client.post("/songs/upload", data={file: f})
-    # with application.app_context():
-    #     # assert response.status_code == 200
-    #     assert b'Dashboard' in response.data
-
-
-
 
 def is_file_exist():
     upload_dir = config.Config.BASE_DIR

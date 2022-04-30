@@ -40,9 +40,12 @@ def songs_upload():
         form.file.data.save(filepath)
         #user = current_user
         list_of_songs = []
+        print(filename)
+        print(filepath)
         with open(filepath) as file:
             csv_file = csv.DictReader(file)
             for row in csv_file:
+                print(row['Name'], row['Artist'])
                 list_of_songs.append(Song(row['Name'],row['Artist']))
 
         current_user.songs = list_of_songs
