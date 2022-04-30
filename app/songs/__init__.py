@@ -30,6 +30,8 @@ def songs_browse(page):
 @login_required
 def songs_upload():
     form = csv_upload()
+    form.validate()
+    print(form.errors)
     if form.validate_on_submit():
         log = logging.getLogger("myApp")
 
