@@ -30,8 +30,6 @@ def songs_browse(page):
 @login_required
 def songs_upload():
     form = csv_upload()
-    form.validate()
-    print(form.errors)
     if form.validate_on_submit():
         log = logging.getLogger("myApp")
 
@@ -40,12 +38,9 @@ def songs_upload():
         form.file.data.save(filepath)
         #user = current_user
         list_of_songs = []
-        print(filename)
-        print(filepath)
         with open(filepath) as file:
             csv_file = csv.DictReader(file)
             for row in csv_file:
-                print(row['Name'], row['Artist'])
                 list_of_songs.append(Song(row['Name'],row['Artist']))
 
         current_user.songs = list_of_songs
